@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.official_draft.md
+.DS_Store
+data/
+*.sqlite3*
+*.lock
+work/
+.pytest_cache/
+!requirements*.txt

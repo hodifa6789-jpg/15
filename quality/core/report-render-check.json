@@ -1,0 +1,26 @@
+[
+  {
+    "name": "synthetic_neighbors",
+    "desktop": {
+      "direction": "rtl",
+      "horizontalOverflow": false,
+      "sections": 15,
+      "scriptCount": 0
+    },
+    "mobile": {
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "name": "synthetic_extortion",
+    "desktop": {
+      "direction": "rtl",
+      "horizontalOverflow": false,
+      "sections": 15,
+      "scriptCount": 0
+    },
+    "mobile": {
+      "horizontalOverflow": false
+    }
+  }
+]

@@ -1,0 +1,3 @@
+-r requirements.txt
+# Retained original Telegram adapter tests only; not used by the web server.
+python-telegram-bot==22.8

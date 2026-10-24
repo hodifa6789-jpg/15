@@ -1,0 +1,9 @@
+{
+  "syntax_python": "passed",
+  "railway_toml": "parsed; one replica",
+  "example_secrets": "empty",
+  "top_level_document_links": "passed",
+  "unchanged_original_test_files": 6,
+  "secret_pattern_matches_locations_only": [],
+  "limitations": "Pattern scan is not a guarantee. No network dependency vulnerability scan was run."
+}

@@ -1,0 +1,1220 @@
+{
+  "dataset": "synthetic-v1-authored-reference",
+  "dataset_sha256": "4a22228c527796e1e6ef3034cb8cadb59dc97de572afccfeca701f193eb5faab",
+  "mode": "offline_semantic_rules",
+  "case_count": 52,
+  "micro": {
+    "precision": 0.9655172413793104,
+    "recall": 0.9032258064516129,
+    "f1": 0.9333333333333333,
+    "tp": 28,
+    "fp": 1,
+    "fn": 3
+  },
+  "macro_f1_present_classes": 0.9205128205128205,
+  "per_class": {
+    "account_takeover": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "tp": 1,
+      "fp": 0,
+      "fn": 1
+    },
+    "death_threat": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "defamation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "extortion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0
+    },
+    "financial_fraud": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "harassment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "ordinary_dispute": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0
+    },
+    "physical_assault": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "tp": 1,
+      "fp": 1,
+      "fn": 1
+    },
+    "privacy_violation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0
+    },
+    "publication_occurred": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "publication_threat": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0
+    },
+    "unauthorized_debit": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "verbal_threat": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "false_classification_count": 1,
+  "unsupported_quote_count": 0,
+  "extra_fact_states_against_reference": 3,
+  "duplicate_questions": 0,
+  "leading_question_heuristic_flags": 0,
+  "interview_completion_rate": 1.0,
+  "latency_ms": {
+    "mean": 0.44682692301788707,
+    "p95": 0.7182999997894512
+  },
+  "live_successful_requests": null,
+  "limitations": [
+    "Synthetic references authored before this run; not independently adjudicated by a human.",
+    "Offline results do not measure a hosted model, Telegram network or Railway deployment.",
+    "Question metrics use scripted unknown answers; leading-question detection is a narrow heuristic.",
+    "Extra fact states measure disagreement with the synthetic annotation, not verified fabrication.",
+    "No statistical safety, legal validity or real-world accuracy claim."
+  ],
+  "cases": [
+    {
+      "id": "E01",
+      "gold": [
+        "ordinary_dispute"
+      ],
+      "predicted": [
+        "ordinary_dispute"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 6.840500000180327,
+      "question_keys": [],
+      "live_error": null
+    },
+    {
+      "id": "E02",
+      "gold": [
+        "ordinary_dispute"
+      ],
+      "predicted": [
+        "ordinary_dispute"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.29150000045774505,
+      "question_keys": [
+        "desired_outcome",
+        "ongoing_issue"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E03",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.2407000010862248,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E04",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.39599999945494346,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E05",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.34419999974488746,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E06",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.5769999988842756,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E07",
+      "gold": [
+        "verbal_threat"
+      ],
+      "predicted": [
+        "verbal_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.23859999964770395,
+      "question_keys": [
+        "current_safety",
+        "evidence",
+        "recurrence",
+        "threat_capability",
+        "incident_time",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E08",
+      "gold": [
+        "verbal_threat"
+      ],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [
+        "verbal_threat"
+      ],
+      "extra_fact_states": [
+        [
+          "injury",
+          "reported"
+        ]
+      ],
+      "missed_fact_states": [
+        [
+          "verbal_threat",
+          "reported"
+        ]
+      ],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.23800000053597614,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E09",
+      "gold": [
+        "death_threat"
+      ],
+      "predicted": [
+        "death_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.16429999959655106,
+      "question_keys": [
+        "current_safety",
+        "injury",
+        "evidence",
+        "recurrence",
+        "threat_capability",
+        "incident_time"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E10",
+      "gold": [
+        "death_threat"
+      ],
+      "predicted": [
+        "death_threat",
+        "physical_assault"
+      ],
+      "false_labels": [
+        "physical_assault"
+      ],
+      "missed_labels": [],
+      "extra_fact_states": [
+        [
+          "physical_assault",
+          "reported"
+        ]
+      ],
+      "missed_fact_states": [
+        [
+          "physical_assault",
+          "denied"
+        ]
+      ],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.2738999992288882,
+      "question_keys": [
+        "current_safety",
+        "evidence",
+        "recurrence",
+        "threat_capability",
+        "incident_time",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E11",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.24929999926825985,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E12",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.258100000792183,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E13",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.1854999991337536,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E14",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.18319999981031287,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E15",
+      "gold": [
+        "extortion",
+        "publication_threat"
+      ],
+      "predicted": [
+        "extortion",
+        "publication_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 1.0765999995783204,
+      "question_keys": [
+        "current_safety",
+        "publication_occurred",
+        "media_possession",
+        "evidence",
+        "recurrence",
+        "deadline"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E16",
+      "gold": [
+        "extortion",
+        "publication_threat"
+      ],
+      "predicted": [
+        "extortion",
+        "publication_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.4943000003549969,
+      "question_keys": [
+        "current_safety",
+        "publication_occurred",
+        "media_possession",
+        "evidence",
+        "recurrence",
+        "deadline"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E17",
+      "gold": [
+        "extortion"
+      ],
+      "predicted": [
+        "extortion"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.47559999984514434,
+      "question_keys": [
+        "current_safety",
+        "publication_occurred",
+        "media_possession",
+        "evidence",
+        "recurrence",
+        "deadline"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E18",
+      "gold": [
+        "publication_threat"
+      ],
+      "predicted": [
+        "publication_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.532599999132799,
+      "question_keys": [
+        "current_safety",
+        "media_possession",
+        "evidence",
+        "recurrence",
+        "deadline",
+        "threat_capability"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E19",
+      "gold": [
+        "publication_threat"
+      ],
+      "predicted": [
+        "publication_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.334399999701418,
+      "question_keys": [
+        "current_safety",
+        "media_possession",
+        "evidence",
+        "recurrence",
+        "deadline",
+        "threat_capability"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E20",
+      "gold": [
+        "publication_occurred"
+      ],
+      "predicted": [
+        "publication_occurred"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.19719999909284525,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "desired_outcome",
+        "current_status",
+        "relationship"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E21",
+      "gold": [
+        "publication_occurred"
+      ],
+      "predicted": [
+        "publication_occurred"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.22109999918029644,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "desired_outcome",
+        "current_status",
+        "relationship"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E22",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.18350000027567148,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E23",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.2827000007528113,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E24",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.19419999989622738,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E25",
+      "gold": [
+        "account_takeover"
+      ],
+      "predicted": [
+        "account_takeover"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.21250000099826138,
+      "question_keys": [
+        "account_access",
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "desired_outcome",
+        "current_status"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E26",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.25719999939610716,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E27",
+      "gold": [
+        "account_takeover"
+      ],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [
+        "account_takeover"
+      ],
+      "extra_fact_states": [],
+      "missed_fact_states": [
+        [
+          "account_takeover",
+          "reported"
+        ]
+      ],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.20260000019334257,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E28",
+      "gold": [
+        "unauthorized_debit"
+      ],
+      "predicted": [
+        "unauthorized_debit"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.4408999993756879,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "financial_loss",
+        "desired_outcome",
+        "current_status"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E29",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.22150000040710438,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E30",
+      "gold": [
+        "unauthorized_debit"
+      ],
+      "predicted": [
+        "unauthorized_debit"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.3818000004685018,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "financial_loss",
+        "desired_outcome",
+        "current_status"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E31",
+      "gold": [
+        "financial_fraud"
+      ],
+      "predicted": [
+        "financial_fraud"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.21629999901051633,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "financial_loss",
+        "desired_outcome",
+        "current_status"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E32",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.1979000007850118,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E33",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.21889999879931565,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E34",
+      "gold": [
+        "physical_assault"
+      ],
+      "predicted": [
+        "physical_assault"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.16879999930097256,
+      "question_keys": [
+        "current_safety",
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "desired_outcome",
+        "current_status"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E35",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.2770000010059448,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E36",
+      "gold": [
+        "physical_assault"
+      ],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [
+        "physical_assault"
+      ],
+      "extra_fact_states": [],
+      "missed_fact_states": [
+        [
+          "injury",
+          "reported"
+        ],
+        [
+          "physical_assault",
+          "reported"
+        ]
+      ],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.14709999959450215,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E37",
+      "gold": [
+        "defamation"
+      ],
+      "predicted": [
+        "defamation"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [
+        [
+          "injury",
+          "reported"
+        ]
+      ],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.34619999860296957,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "desired_outcome",
+        "current_status",
+        "relationship"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E38",
+      "gold": [
+        "harassment"
+      ],
+      "predicted": [
+        "harassment"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.18149999959859997,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "desired_outcome",
+        "current_status",
+        "relationship"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E39",
+      "gold": [
+        "ordinary_dispute"
+      ],
+      "predicted": [
+        "ordinary_dispute"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.29630000062752515,
+      "question_keys": [
+        "desired_outcome",
+        "ongoing_issue"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E40",
+      "gold": [
+        "privacy_violation"
+      ],
+      "predicted": [
+        "privacy_violation"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.15940000048431102,
+      "question_keys": [
+        "evidence",
+        "recurrence",
+        "incident_time",
+        "desired_outcome",
+        "current_status",
+        "relationship"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E41",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.16620000133116264,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E42",
+      "gold": [
+        "ordinary_dispute"
+      ],
+      "predicted": [
+        "ordinary_dispute"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.42380000013508834,
+      "question_keys": [],
+      "live_error": null
+    },
+    {
+      "id": "E43",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.4895000001852168,
+      "question_keys": [
+        "clarify_verbal_threat",
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E44",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.07720000030531082,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E45",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.16460000006190967,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E46",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.1263999984075781,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E47",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.2894000008382136,
+      "question_keys": [],
+      "live_error": null
+    },
+    {
+      "id": "E48",
+      "gold": [],
+      "predicted": [],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [
+        [
+          "immediate_danger",
+          "denied"
+        ]
+      ],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.2331000014237361,
+      "question_keys": [
+        "other_side",
+        "desired_outcome"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E49",
+      "gold": [
+        "publication_threat"
+      ],
+      "predicted": [
+        "publication_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.7182999997894512,
+      "question_keys": [
+        "publication_occurred",
+        "media_possession",
+        "evidence",
+        "recurrence",
+        "deadline",
+        "threat_capability"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E50",
+      "gold": [
+        "publication_threat"
+      ],
+      "predicted": [
+        "publication_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.5592000015894882,
+      "question_keys": [
+        "current_safety",
+        "publication_occurred",
+        "evidence",
+        "recurrence",
+        "deadline",
+        "threat_capability"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E51",
+      "gold": [
+        "publication_threat"
+      ],
+      "predicted": [
+        "publication_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 1.3249999992694939,
+      "question_keys": [
+        "current_safety",
+        "publication_occurred",
+        "media_possession",
+        "evidence",
+        "recurrence",
+        "threat_capability"
+      ],
+      "live_error": null
+    },
+    {
+      "id": "E52",
+      "gold": [
+        "verbal_threat"
+      ],
+      "predicted": [
+        "verbal_threat"
+      ],
+      "false_labels": [],
+      "missed_labels": [],
+      "extra_fact_states": [],
+      "missed_fact_states": [],
+      "unsupported_quote_count": 0,
+      "latency_ms": 0.26339999931224156,
+      "question_keys": [
+        "current_safety",
+        "evidence",
+        "recurrence",
+        "threat_capability",
+        "incident_time",
+        "desired_outcome"
+      ],
+      "live_error": null
+    }
+  ]
+}

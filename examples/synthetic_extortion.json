@@ -1,0 +1,1436 @@
+{
+  "schema_version": 2,
+  "case_id": "TEST-3e132bd9706c",
+  "created_utc": "2026-10-24T10:30:29.307052+00:00",
+  "original_statement": "اليوم العصر شخص بعرفه طلب مني 500 دينار خلال 24 ساعة وهددني بنشر صوري إذا ما دفعت. ما دفعت أي مبلغ. لم يتم نشر الصور. مش متأكد إذا معه الصور. عندي رسائل محفوظة. بدي توثيق.",
+  "summary": "أفاد بـابتزاز مزعوم: «هددني بنشر صوري إذا ما دفعت». أفاد بـتهديد بالنشر: «أرسل نسخة من الصورة وقال رح ينشرها الليلة». نفى دفع المبلغ حتى وقت الإفادة. نفى وقوع النشر حتى وقت الإفادة. نفى الخسارة المالية. المبلغ المطلوب بحسب الإفادة: «500 دينار». ذكر أن الطرف الآخر أرسل نسخة من صورة؛ لم تُفحص: «أرسل نسخة من الصورة». المهلة الأولى: خلال 24 ساعة. أحدث موعد مذكور: رح ينشرها الليلة. هدفه المعلن: «بدي توثيق». جميع المعلومات من الإفادة ولم تُتحقق استقلالًا.",
+  "classification": [
+    "ابتزاز مزعوم",
+    "تهديد بالنشر"
+  ],
+  "classification_audit": {
+    "model_proposed": [],
+    "fact_supported": [
+      "extortion",
+      "publication_threat"
+    ],
+    "final_experimental": [
+      "extortion",
+      "publication_threat"
+    ],
+    "human_review_required": true
+  },
+  "source_anchored_facts": [
+    {
+      "kind": "time",
+      "polarity": "reported",
+      "quote": "اليوم العصر",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 0,
+      "end": 11,
+      "fact_id": "7e1925c0df40bd97",
+      "event_id": "time:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "threat_deadline",
+      "polarity": "reported",
+      "quote": "خلال 24 ساعة",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 40,
+      "end": 52,
+      "fact_id": "8bde3ec73a3bc3c0",
+      "event_id": "threat_deadline:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "relationship",
+      "polarity": "reported",
+      "quote": "شخص بعرفه",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 12,
+      "end": 21,
+      "fact_id": "856ff4746e1664e7",
+      "event_id": "relationship:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "amount_demanded",
+      "polarity": "reported",
+      "quote": "500 دينار",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 30,
+      "end": 39,
+      "fact_id": "94aeab7df6e6dd31",
+      "event_id": "amount_demanded:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "publication_threat",
+      "polarity": "reported",
+      "quote": "هددني بنشر صوري إذا ما دفعت",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 54,
+      "end": 81,
+      "fact_id": "0dbb0dc1706cf789",
+      "event_id": "publication_threat:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "payment_made",
+      "polarity": "denied",
+      "quote": "ما دفعت أي مبلغ",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 83,
+      "end": 98,
+      "fact_id": "12795dc50caaf3db",
+      "event_id": "payment_made:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "publication_occurred",
+      "polarity": "denied",
+      "quote": "لم يتم نشر الصور",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 100,
+      "end": 116,
+      "fact_id": "3b9deeae40954c18",
+      "event_id": "publication_occurred:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "media_possession",
+      "polarity": "uncertain",
+      "quote": "مش متأكد إذا معه الصور",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 118,
+      "end": 140,
+      "fact_id": "6cb2030b1fb96a93",
+      "event_id": "media_possession:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": true
+    },
+    {
+      "kind": "evidence",
+      "polarity": "reported",
+      "quote": "عندي رسائل",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 142,
+      "end": 152,
+      "fact_id": "05a1504e8018590b",
+      "event_id": "evidence:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "desired_outcome",
+      "polarity": "reported",
+      "quote": "بدي توثيق",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 161,
+      "end": 170,
+      "fact_id": "142244fe5ff948ce",
+      "event_id": "desired_outcome:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "publication_threat",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة وقال رح ينشرها الليلة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 72,
+      "fact_id": "4df2c5fab887119e",
+      "event_id": "publication_threat:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "media_possession",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 50,
+      "fact_id": "00e952b92bb11703",
+      "event_id": "media_possession:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "threat_deadline",
+      "polarity": "reported",
+      "quote": "رح ينشرها الليلة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 72,
+      "fact_id": "8fe8a940b0720214",
+      "event_id": "threat_deadline:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "publication_occurred",
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 74,
+      "end": 95,
+      "fact_id": "1dc7c8e288b6c920",
+      "event_id": "publication_occurred:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "payment_made",
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 74,
+      "end": 95,
+      "fact_id": "3a56364a79ece140",
+      "event_id": "payment_made:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "immediate_danger",
+      "polarity": "denied",
+      "quote": "ما في خطر حاليًا",
+      "source": "answer_2",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 97,
+      "end": 113,
+      "fact_id": "466f56d8dbf5b84f",
+      "event_id": "immediate_danger:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "financial_loss",
+      "polarity": "denied",
+      "quote": "ما خسرت مصاري",
+      "source": "answer_4",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 0,
+      "end": 13,
+      "fact_id": "be90aab1ad597012",
+      "event_id": "financial_loss:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "extortion",
+      "polarity": "reported",
+      "quote": "هددني بنشر صوري إذا ما دفعت",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 54,
+      "end": 81,
+      "fact_id": "aaa2ae5740d24356",
+      "event_id": "extortion:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "evidence",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 50,
+      "fact_id": "b83f3493048224f7",
+      "event_id": "evidence:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "immediate_danger",
+      "polarity": "denied",
+      "quote": "لا",
+      "source": "answer_1",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_answer_to_question",
+      "requires_review": false,
+      "start": 0,
+      "end": 2,
+      "fact_id": "94a37be231bee600",
+      "event_id": "immediate_danger:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    }
+  ],
+  "current_fact_state": {
+    "time": {
+      "kind": "time",
+      "polarity": "reported",
+      "quote": "اليوم العصر",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 0,
+      "end": 11,
+      "fact_id": "7e1925c0df40bd97",
+      "event_id": "time:original",
+      "evidence_refs": [
+        "7e1925c0df40bd97"
+      ]
+    },
+    "relationship": {
+      "kind": "relationship",
+      "polarity": "reported",
+      "quote": "شخص بعرفه",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 12,
+      "end": 21,
+      "fact_id": "856ff4746e1664e7",
+      "event_id": "relationship:original",
+      "evidence_refs": [
+        "856ff4746e1664e7"
+      ]
+    },
+    "amount_demanded": {
+      "kind": "amount_demanded",
+      "polarity": "reported",
+      "quote": "500 دينار",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 30,
+      "end": 39,
+      "fact_id": "94aeab7df6e6dd31",
+      "event_id": "amount_demanded:original",
+      "evidence_refs": [
+        "94aeab7df6e6dd31"
+      ]
+    },
+    "threat_deadline": {
+      "kind": "threat_deadline",
+      "polarity": "reported",
+      "quote": "رح ينشرها الليلة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 72,
+      "fact_id": "8fe8a940b0720214",
+      "event_id": "threat_deadline:answer_2",
+      "evidence_refs": [
+        "8bde3ec73a3bc3c0",
+        "8fe8a940b0720214"
+      ]
+    },
+    "publication_threat": {
+      "kind": "publication_threat",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة وقال رح ينشرها الليلة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 72,
+      "fact_id": "4df2c5fab887119e",
+      "event_id": "publication_threat:answer_2",
+      "evidence_refs": [
+        "0dbb0dc1706cf789",
+        "4df2c5fab887119e"
+      ]
+    },
+    "extortion": {
+      "kind": "extortion",
+      "polarity": "reported",
+      "quote": "هددني بنشر صوري إذا ما دفعت",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 54,
+      "end": 81,
+      "fact_id": "aaa2ae5740d24356",
+      "event_id": "extortion:original",
+      "evidence_refs": [
+        "aaa2ae5740d24356"
+      ]
+    },
+    "payment_made": {
+      "kind": "payment_made",
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 74,
+      "end": 95,
+      "fact_id": "3a56364a79ece140",
+      "event_id": "payment_made:answer_2",
+      "evidence_refs": [
+        "12795dc50caaf3db",
+        "3a56364a79ece140"
+      ]
+    },
+    "publication_occurred": {
+      "kind": "publication_occurred",
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 74,
+      "end": 95,
+      "fact_id": "1dc7c8e288b6c920",
+      "event_id": "publication_occurred:answer_2",
+      "evidence_refs": [
+        "3b9deeae40954c18",
+        "1dc7c8e288b6c920"
+      ]
+    },
+    "media_possession": {
+      "kind": "media_possession",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 50,
+      "fact_id": "00e952b92bb11703",
+      "event_id": "media_possession:answer_2",
+      "evidence_refs": [
+        "6cb2030b1fb96a93",
+        "00e952b92bb11703"
+      ],
+      "transition_from": "uncertain"
+    },
+    "evidence": {
+      "kind": "evidence",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 50,
+      "fact_id": "b83f3493048224f7",
+      "event_id": "evidence:answer_2",
+      "evidence_refs": [
+        "05a1504e8018590b",
+        "b83f3493048224f7"
+      ]
+    },
+    "desired_outcome": {
+      "kind": "desired_outcome",
+      "polarity": "reported",
+      "quote": "بدي توثيق",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 161,
+      "end": 170,
+      "fact_id": "142244fe5ff948ce",
+      "event_id": "desired_outcome:original",
+      "evidence_refs": [
+        "142244fe5ff948ce"
+      ]
+    },
+    "immediate_danger": {
+      "kind": "immediate_danger",
+      "polarity": "denied",
+      "quote": "ما في خطر حاليًا",
+      "source": "answer_2",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 97,
+      "end": 113,
+      "fact_id": "466f56d8dbf5b84f",
+      "event_id": "immediate_danger:answer_2",
+      "evidence_refs": [
+        "94a37be231bee600",
+        "466f56d8dbf5b84f"
+      ]
+    },
+    "financial_loss": {
+      "kind": "financial_loss",
+      "polarity": "denied",
+      "quote": "ما خسرت مصاري",
+      "source": "answer_4",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 0,
+      "end": 13,
+      "fact_id": "be90aab1ad597012",
+      "event_id": "financial_loss:original",
+      "evidence_refs": [
+        "be90aab1ad597012"
+      ]
+    }
+  },
+  "contradictions": [],
+  "reported_facts": [
+    {
+      "kind": "time",
+      "polarity": "reported",
+      "quote": "اليوم العصر",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 0,
+      "end": 11,
+      "fact_id": "7e1925c0df40bd97",
+      "event_id": "time:original",
+      "evidence_refs": [
+        "7e1925c0df40bd97"
+      ]
+    },
+    {
+      "kind": "relationship",
+      "polarity": "reported",
+      "quote": "شخص بعرفه",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 12,
+      "end": 21,
+      "fact_id": "856ff4746e1664e7",
+      "event_id": "relationship:original",
+      "evidence_refs": [
+        "856ff4746e1664e7"
+      ]
+    },
+    {
+      "kind": "amount_demanded",
+      "polarity": "reported",
+      "quote": "500 دينار",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 30,
+      "end": 39,
+      "fact_id": "94aeab7df6e6dd31",
+      "event_id": "amount_demanded:original",
+      "evidence_refs": [
+        "94aeab7df6e6dd31"
+      ]
+    },
+    {
+      "kind": "threat_deadline",
+      "polarity": "reported",
+      "quote": "رح ينشرها الليلة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 72,
+      "fact_id": "8fe8a940b0720214",
+      "event_id": "threat_deadline:answer_2",
+      "evidence_refs": [
+        "8bde3ec73a3bc3c0",
+        "8fe8a940b0720214"
+      ]
+    },
+    {
+      "kind": "publication_threat",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة وقال رح ينشرها الليلة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 72,
+      "fact_id": "4df2c5fab887119e",
+      "event_id": "publication_threat:answer_2",
+      "evidence_refs": [
+        "0dbb0dc1706cf789",
+        "4df2c5fab887119e"
+      ]
+    },
+    {
+      "kind": "extortion",
+      "polarity": "reported",
+      "quote": "هددني بنشر صوري إذا ما دفعت",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 54,
+      "end": 81,
+      "fact_id": "aaa2ae5740d24356",
+      "event_id": "extortion:original",
+      "evidence_refs": [
+        "aaa2ae5740d24356"
+      ]
+    },
+    {
+      "kind": "media_possession",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 50,
+      "fact_id": "00e952b92bb11703",
+      "event_id": "media_possession:answer_2",
+      "evidence_refs": [
+        "6cb2030b1fb96a93",
+        "00e952b92bb11703"
+      ],
+      "transition_from": "uncertain"
+    },
+    {
+      "kind": "evidence",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 50,
+      "fact_id": "b83f3493048224f7",
+      "event_id": "evidence:answer_2",
+      "evidence_refs": [
+        "05a1504e8018590b",
+        "b83f3493048224f7"
+      ]
+    },
+    {
+      "kind": "desired_outcome",
+      "polarity": "reported",
+      "quote": "بدي توثيق",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 161,
+      "end": 170,
+      "fact_id": "142244fe5ff948ce",
+      "event_id": "desired_outcome:original",
+      "evidence_refs": [
+        "142244fe5ff948ce"
+      ]
+    }
+  ],
+  "denied_facts": [
+    {
+      "kind": "payment_made",
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 74,
+      "end": 95,
+      "fact_id": "3a56364a79ece140",
+      "event_id": "payment_made:answer_2",
+      "evidence_refs": [
+        "12795dc50caaf3db",
+        "3a56364a79ece140"
+      ]
+    },
+    {
+      "kind": "publication_occurred",
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 74,
+      "end": 95,
+      "fact_id": "1dc7c8e288b6c920",
+      "event_id": "publication_occurred:answer_2",
+      "evidence_refs": [
+        "3b9deeae40954c18",
+        "1dc7c8e288b6c920"
+      ]
+    },
+    {
+      "kind": "immediate_danger",
+      "polarity": "denied",
+      "quote": "ما في خطر حاليًا",
+      "source": "answer_2",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 97,
+      "end": 113,
+      "fact_id": "466f56d8dbf5b84f",
+      "event_id": "immediate_danger:answer_2",
+      "evidence_refs": [
+        "94a37be231bee600",
+        "466f56d8dbf5b84f"
+      ]
+    },
+    {
+      "kind": "financial_loss",
+      "polarity": "denied",
+      "quote": "ما خسرت مصاري",
+      "source": "answer_4",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 0,
+      "end": 13,
+      "fact_id": "be90aab1ad597012",
+      "event_id": "financial_loss:original",
+      "evidence_refs": [
+        "be90aab1ad597012"
+      ]
+    }
+  ],
+  "uncertain_facts": [],
+  "structured_details": {
+    "time": {
+      "polarity": "reported",
+      "quote": "اليوم العصر",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "relationship": {
+      "polarity": "reported",
+      "quote": "شخص بعرفه",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "amount_demanded": {
+      "polarity": "reported",
+      "quote": "500 دينار",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "threat_deadline": {
+      "polarity": "reported",
+      "quote": "رح ينشرها الليلة",
+      "source": "answer_2",
+      "verification": "unverified"
+    },
+    "publication_threat": {
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة وقال رح ينشرها الليلة",
+      "source": "answer_2",
+      "verification": "unverified"
+    },
+    "extortion": {
+      "polarity": "reported",
+      "quote": "هددني بنشر صوري إذا ما دفعت",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "payment_made": {
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "verification": "unverified"
+    },
+    "publication_occurred": {
+      "polarity": "denied",
+      "quote": "ما نشر الصور وما دفعت",
+      "source": "answer_2",
+      "verification": "unverified"
+    },
+    "media_possession": {
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "verification": "unverified"
+    },
+    "evidence": {
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "verification": "unverified"
+    },
+    "desired_outcome": {
+      "polarity": "reported",
+      "quote": "بدي توثيق",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "immediate_danger": {
+      "polarity": "denied",
+      "quote": "ما في خطر حاليًا",
+      "source": "answer_2",
+      "verification": "unverified"
+    },
+    "financial_loss": {
+      "polarity": "denied",
+      "quote": "ما خسرت مصاري",
+      "source": "answer_4",
+      "verification": "unverified"
+    }
+  },
+  "chronological_case_state": {
+    "media_possession": {
+      "source": "answer_2",
+      "quote": "أرسل نسخة من الصورة",
+      "polarity": "reported",
+      "verification": "unverified",
+      "status": "copy_reported"
+    },
+    "reported_copy": {
+      "source": "answer_2",
+      "quote": "أرسل نسخة من الصورة",
+      "polarity": "reported",
+      "verification": "unverified",
+      "status": "copy_reported"
+    },
+    "original_deadline": {
+      "source": "initial_statement",
+      "quote": "خلال 24 ساعة",
+      "polarity": "reported",
+      "verification": "unverified"
+    },
+    "latest_deadline": {
+      "source": "answer_2",
+      "quote": "رح ينشرها الليلة",
+      "polarity": "reported",
+      "verification": "unverified",
+      "status": "near_term_publication_threat"
+    },
+    "renewed_threat": {
+      "source": "answer_2",
+      "quote": "رجع بعتلي رسالة وأرسل نسخة من الصورة وقال رح ينشرها الليلة",
+      "polarity": "reported",
+      "verification": "unverified"
+    },
+    "near_term_threat": {
+      "source": "answer_2",
+      "quote": "رح ينشرها الليلة",
+      "polarity": "reported",
+      "verification": "unverified",
+      "status": "near_term_publication_threat"
+    },
+    "events": [
+      {
+        "kind": "media_possession_uncertain",
+        "source": "initial_statement",
+        "quote": "مش متأكد إذا معه الصور",
+        "polarity": "uncertain",
+        "verification": "unverified",
+        "event_id": "event-media_possession_uncertain:original",
+        "observations": [
+          {
+            "source": "initial_statement",
+            "quote": "مش متأكد إذا معه الصور"
+          }
+        ]
+      },
+      {
+        "kind": "copy_reported",
+        "source": "answer_2",
+        "quote": "أرسل نسخة من الصورة",
+        "polarity": "reported",
+        "verification": "unverified",
+        "event_id": "event-copy_reported:answer_2",
+        "observations": [
+          {
+            "source": "answer_2",
+            "quote": "أرسل نسخة من الصورة"
+          }
+        ]
+      },
+      {
+        "kind": "near_term_threat",
+        "source": "answer_2",
+        "quote": "رح ينشرها الليلة",
+        "polarity": "reported",
+        "verification": "unverified",
+        "event_id": "event-near_term_threat:answer_2",
+        "observations": [
+          {
+            "source": "answer_2",
+            "quote": "رح ينشرها الليلة"
+          }
+        ]
+      },
+      {
+        "kind": "renewed_threat",
+        "source": "answer_2",
+        "quote": "رجع بعتلي رسالة وأرسل نسخة من الصورة وقال رح ينشرها الليلة",
+        "polarity": "reported",
+        "verification": "unverified",
+        "event_id": "event-renewed_threat:answer_2",
+        "observations": [
+          {
+            "source": "answer_2",
+            "quote": "رجع بعتلي رسالة وأرسل نسخة من الصورة وقال رح ينشرها الليلة"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "الزمن بحسب تسلسل الإفادات؛ العبارات النسبية محفوظة دون اختراع تاريخ. إعادة التأكيد ليست حدثًا مستقلًا."
+  },
+  "mentioned_evidence": [
+    {
+      "kind": "evidence",
+      "polarity": "reported",
+      "quote": "عندي رسائل",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 142,
+      "end": 152,
+      "fact_id": "05a1504e8018590b",
+      "event_id": "evidence:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "evidence",
+      "polarity": "reported",
+      "quote": "أرسل نسخة من الصورة",
+      "source": "answer_2",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 31,
+      "end": 50,
+      "fact_id": "b83f3493048224f7",
+      "event_id": "evidence:answer_2",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    }
+  ],
+  "missing_information": [],
+  "user_goal": "بدي توثيق",
+  "assisted_resolution_guidance": [
+    "احتفظ بالمراسلات وتوقيتها دون إعادة نشر المواد الخاصة، وراجع شخصًا مختصًا أو جهة مناسبة.",
+    "إذا ظهر خطر مباشر، اطلب المساعدة البشرية فورًا."
+  ],
+  "risk": {
+    "risk_index": 93,
+    "severity_index": 93,
+    "risk_level": "مرتفع جدًا",
+    "route": "priority_human_review",
+    "recommended_route": "priority_human_review",
+    "route_label": "مراجعة بشرية ذات أولوية",
+    "urgent": false,
+    "immediate_safety_concern": "denied_by_user",
+    "digital_urgency": "urgent",
+    "review_priority": "priority",
+    "factors": [
+      "أساس نوع الواقعة: ابتزاز مزعوم (+65)",
+      "إرسال نسخة كما ورد في الإفادة؛ لم تُفحص (+8)",
+      "تهديد لاحق مستقل بحسب الإفادة (+10)",
+      "أحدث مهلة قريبة؛ تحل محل وزن المهلة القديمة (+10)"
+    ],
+    "factor_breakdown": [
+      {
+        "factor": "extortion",
+        "contribution": 65,
+        "source_quote": "هددني بنشر صوري إذا ما دفعت",
+        "source": "initial_statement",
+        "fact_id": "aaa2ae5740d24356",
+        "review_status": "unverified",
+        "description": "أساس نوع الواقعة: ابتزاز مزعوم"
+      },
+      {
+        "factor": "reported_copy_received",
+        "contribution": 8,
+        "source_quote": "أرسل نسخة من الصورة",
+        "source": "answer_2",
+        "fact_id": null,
+        "review_status": "unverified",
+        "description": "إرسال نسخة كما ورد في الإفادة؛ لم تُفحص"
+      },
+      {
+        "factor": "renewed_threat",
+        "contribution": 10,
+        "source_quote": "رجع بعتلي رسالة وأرسل نسخة من الصورة وقال رح ينشرها الليلة",
+        "source": "answer_2",
+        "fact_id": null,
+        "review_status": "unverified",
+        "description": "تهديد لاحق مستقل بحسب الإفادة"
+      },
+      {
+        "factor": "new_near_term_deadline",
+        "contribution": 10,
+        "source_quote": "رح ينشرها الليلة",
+        "source": "answer_2",
+        "fact_id": null,
+        "review_status": "unverified",
+        "description": "أحدث مهلة قريبة؛ تحل محل وزن المهلة القديمة"
+      }
+    ],
+    "requires_human_review": true,
+    "model_extraction_succeeded": true,
+    "case_state_changes": [
+      {
+        "kind": "media_possession_uncertain",
+        "source": "initial_statement",
+        "quote": "مش متأكد إذا معه الصور",
+        "polarity": "uncertain",
+        "verification": "unverified",
+        "event_id": "event-media_possession_uncertain:original",
+        "observations": [
+          {
+            "source": "initial_statement",
+            "quote": "مش متأكد إذا معه الصور"
+          }
+        ]
+      },
+      {
+        "kind": "copy_reported",
+        "source": "answer_2",
+        "quote": "أرسل نسخة من الصورة",
+        "polarity": "reported",
+        "verification": "unverified",
+        "event_id": "event-copy_reported:answer_2",
+        "observations": [
+          {
+            "source": "answer_2",
+            "quote": "أرسل نسخة من الصورة"
+          }
+        ]
+      },
+      {
+        "kind": "near_term_threat",
+        "source": "answer_2",
+        "quote": "رح ينشرها الليلة",
+        "polarity": "reported",
+        "verification": "unverified",
+        "event_id": "event-near_term_threat:answer_2",
+        "observations": [
+          {
+            "source": "answer_2",
+            "quote": "رح ينشرها الليلة"
+          }
+        ]
+      },
+      {
+        "kind": "renewed_threat",
+        "source": "answer_2",
+        "quote": "رجع بعتلي رسالة وأرسل نسخة من الصورة وقال رح ينشرها الليلة",
+        "polarity": "reported",
+        "verification": "unverified",
+        "event_id": "event-renewed_threat:answer_2",
+        "observations": [
+          {
+            "source": "answer_2",
+            "quote": "رجع بعتلي رسالة وأرسل نسخة من الصورة وقال رح ينشرها الليلة"
+          }
+        ]
+      }
+    ],
+    "uncertainty": "غير معاير؛ يعتمد على إفادات غير متحقق منها",
+    "disclaimer": "مؤشر شدة تجريبي 0–100 وليس احتمال وقوع الضرر أو حكمًا قانونيًا. الأوزان غير معايرة؛ جميع المعلومات تحتاج مراجعة بشرية."
+  },
+  "interview": [
+    {
+      "key": "current_safety",
+      "question": "هل أنت في خطر مباشر الآن أو تحتاج مساعدة عاجلة؟",
+      "answer": "لا",
+      "question_id": "fcad26b94d5a4df8",
+      "safety_revision": "e3b0c44298fc"
+    },
+    {
+      "key": "recurrence",
+      "question": "هل حدث التصرف مرة واحدة أم تكرر؟",
+      "answer": "في تطور جديد: رجع بعتلي رسالة وأرسل نسخة من الصورة وقال رح ينشرها الليلة. ما نشر الصور وما دفعت. ما في خطر حاليًا.",
+      "question_id": "042d10a935e64fcf",
+      "safety_revision": "e3b0c44298fc"
+    },
+    {
+      "key": "threat_capability",
+      "question": "هل عندك معلومات عن قدرة الطرف الآخر على الوصول إليك أو تنفيذ ما ورد في الرسالة؟",
+      "answer": "ما بعرف",
+      "question_id": "85d074c880c74603",
+      "safety_revision": "e3b0c44298fc"
+    },
+    {
+      "key": "financial_loss",
+      "question": "هل حصلت خسارة مالية فعلية، أم لم تحصل، أم لا تعرف؟",
+      "answer": "ما خسرت مصاري",
+      "question_id": "f4914d54c3714913",
+      "safety_revision": "e3b0c44298fc"
+    },
+    {
+      "key": "current_status",
+      "question": "هل التصرف الذي وصفته مستمر أم توقف؟",
+      "answer": "التهديد لسه مستمر. أقصد نفس الرسالة. ما وصلتني رسائل جديدة.",
+      "question_id": "26acf052f22d4f89",
+      "safety_revision": "e3b0c44298fc"
+    }
+  ],
+  "planner_trace": [
+    {
+      "selected": "current_safety",
+      "stop_reason": null,
+      "missing": [
+        "immediate_danger",
+        "recurrence",
+        "threat_capability",
+        "financial_loss",
+        "resolved"
+      ],
+      "candidates": [
+        {
+          "key": "current_safety",
+          "target": "immediate_danger",
+          "impact": 110,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "التحقق من السلامة مبرر بواقعة ذات صلة",
+          "text": "هل أنت في خطر مباشر الآن أو تحتاج مساعدة عاجلة؟",
+          "utility": 107.0
+        },
+        {
+          "key": "recurrence",
+          "target": "recurrence",
+          "impact": 76,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "يفصل واقعة واحدة عن سلوك متكرر",
+          "text": "هل حدث التصرف مرة واحدة أم تكرر؟",
+          "utility": 73.0
+        },
+        {
+          "key": "threat_capability",
+          "target": "threat_capability",
+          "impact": 70,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "قد يغير أولوية المراجعة",
+          "text": "هل عندك معلومات عن قدرة الطرف الآخر على الوصول إليك أو تنفيذ ما ورد في الرسالة؟",
+          "utility": 67.0
+        },
+        {
+          "key": "financial_loss",
+          "target": "financial_loss",
+          "impact": 64,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "يفصل الخسارة الفعلية عن محاولة الطلب",
+          "text": "هل حصلت خسارة مالية فعلية، أم لم تحصل، أم لا تعرف؟",
+          "utility": 61.0
+        },
+        {
+          "key": "current_status",
+          "target": "resolved",
+          "impact": 60,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "معرفة استمرار الواقعة",
+          "text": "هل التصرف الذي وصفته مستمر أم توقف؟",
+          "utility": 57.0
+        }
+      ]
+    },
+    {
+      "selected": "recurrence",
+      "stop_reason": null,
+      "missing": [
+        "recurrence",
+        "threat_capability",
+        "financial_loss",
+        "resolved"
+      ],
+      "candidates": [
+        {
+          "key": "recurrence",
+          "target": "recurrence",
+          "impact": 76,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "يفصل واقعة واحدة عن سلوك متكرر",
+          "text": "هل حدث التصرف مرة واحدة أم تكرر؟",
+          "utility": 73.0
+        },
+        {
+          "key": "threat_capability",
+          "target": "threat_capability",
+          "impact": 70,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "قد يغير أولوية المراجعة",
+          "text": "هل عندك معلومات عن قدرة الطرف الآخر على الوصول إليك أو تنفيذ ما ورد في الرسالة؟",
+          "utility": 67.0
+        },
+        {
+          "key": "financial_loss",
+          "target": "financial_loss",
+          "impact": 64,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "يفصل الخسارة الفعلية عن محاولة الطلب",
+          "text": "هل حصلت خسارة مالية فعلية، أم لم تحصل، أم لا تعرف؟",
+          "utility": 61.0
+        },
+        {
+          "key": "current_status",
+          "target": "resolved",
+          "impact": 60,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "معرفة استمرار الواقعة",
+          "text": "هل التصرف الذي وصفته مستمر أم توقف؟",
+          "utility": 57.0
+        }
+      ]
+    },
+    {
+      "selected": "threat_capability",
+      "stop_reason": null,
+      "missing": [
+        "threat_capability",
+        "financial_loss",
+        "resolved"
+      ],
+      "candidates": [
+        {
+          "key": "threat_capability",
+          "target": "threat_capability",
+          "impact": 70,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "قد يغير أولوية المراجعة",
+          "text": "هل عندك معلومات عن قدرة الطرف الآخر على الوصول إليك أو تنفيذ ما ورد في الرسالة؟",
+          "utility": 67.0
+        },
+        {
+          "key": "financial_loss",
+          "target": "financial_loss",
+          "impact": 64,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "يفصل الخسارة الفعلية عن محاولة الطلب",
+          "text": "هل حصلت خسارة مالية فعلية، أم لم تحصل، أم لا تعرف؟",
+          "utility": 61.0
+        },
+        {
+          "key": "current_status",
+          "target": "resolved",
+          "impact": 60,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "معرفة استمرار الواقعة",
+          "text": "هل التصرف الذي وصفته مستمر أم توقف؟",
+          "utility": 57.0
+        }
+      ]
+    },
+    {
+      "selected": "financial_loss",
+      "stop_reason": null,
+      "missing": [
+        "financial_loss",
+        "resolved"
+      ],
+      "candidates": [
+        {
+          "key": "financial_loss",
+          "target": "financial_loss",
+          "impact": 64,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "يفصل الخسارة الفعلية عن محاولة الطلب",
+          "text": "هل حصلت خسارة مالية فعلية، أم لم تحصل، أم لا تعرف؟",
+          "utility": 61.0
+        },
+        {
+          "key": "current_status",
+          "target": "resolved",
+          "impact": 60,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "معرفة استمرار الواقعة",
+          "text": "هل التصرف الذي وصفته مستمر أم توقف؟",
+          "utility": 57.0
+        }
+      ]
+    },
+    {
+      "selected": "current_status",
+      "stop_reason": null,
+      "missing": [
+        "resolved"
+      ],
+      "candidates": [
+        {
+          "key": "current_status",
+          "target": "resolved",
+          "impact": 60,
+          "uncertainty": 1.0,
+          "burden": 3,
+          "reason": "معرفة استمرار الواقعة",
+          "text": "هل التصرف الذي وصفته مستمر أم توقف؟",
+          "utility": 57.0
+        }
+      ]
+    },
+    {
+      "selected": null,
+      "stop_reason": "sufficient_information",
+      "missing": [],
+      "candidates": []
+    }
+  ],
+  "analysis": {
+    "mode": "synthetic_mock_no_external_request",
+    "llm_calls": 0,
+    "errors": [],
+    "rejected_proposal_count": 0
+  },
+  "limitations": [
+    "مثال اصطناعي بمحاكاة المستخرج؛ لم يُستدعَ نموذج حي ولم تُختبر خدمات خارجية. الدرجات هنا توضيح لقواعد الشدة فقط.",
+    "جميع المعلومات إفادات غير متحقق منها، ولم تُفحص الأدلة الأصلية.",
+    "قد تفوت المعالجة اللغوية تعبيرات أو تسندها خطأ؛ وجود اقتباس لا يضمن صحة التفسير.",
+    "غياب إشارة خطر لا يثبت غيابه؛ مؤشر الشدة غير معاير ولا يمثل احتمالًا.",
+    "يلزم تدقيق بشري قبل أي إجراء رسمي. النظام تجريبي للتوثيق والفرز الأولي فقط."
+  ],
+  "official_report_status": "draft_requested_not_submitted"
+}

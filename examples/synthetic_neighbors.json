@@ -1,0 +1,750 @@
+{
+  "schema_version": 2,
+  "case_id": "TEST-4d17cb0449d1",
+  "created_utc": "2026-10-24T10:30:29.278129+00:00",
+  "original_statement": "صار خلاف بيني وبين جاري حول موقف السيارة. انتهى الخلاف. ما هددني ولا اعتدى علي. ما صار ضرر أو خسارة. أنا مش خايف وما في خطر حاليًا. بدي نصائح وما بدي بلاغ.",
+  "summary": "أفاد المشتكي بخلاف كلامي: «صار خلاف بيني وبين جاري حول موقف السيارة». نفى الشعور بالخوف حاليًا. نفى الاعتداء الجسدي. نفى الخسارة المالية. ذكر أن التصرف توقف أو أن الخلاف انتهى. ذكر أنه لا يرغب في تقديم بلاغ. هدفه المعلن: «بدي نصائح». جميع المعلومات من الإفادة ولم تُتحقق استقلالًا.",
+  "classification": [
+    "خلاف عادي"
+  ],
+  "classification_audit": {
+    "model_proposed": [],
+    "fact_supported": [
+      "ordinary_dispute"
+    ],
+    "final_experimental": [
+      "ordinary_dispute"
+    ],
+    "human_review_required": true
+  },
+  "source_anchored_facts": [
+    {
+      "kind": "ordinary_dispute",
+      "polarity": "reported",
+      "quote": "خلاف",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 50,
+      "end": 54,
+      "fact_id": "6998a8c7ae0425ef",
+      "event_id": "ordinary_dispute:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "relationship",
+      "polarity": "reported",
+      "quote": "جاري",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 19,
+      "end": 23,
+      "fact_id": "25e9d5c295692a4f",
+      "event_id": "relationship:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "resolved",
+      "polarity": "reported",
+      "quote": "انتهى الخلاف",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 42,
+      "end": 54,
+      "fact_id": "751bd9fbf5ffa9a9",
+      "event_id": "resolved:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "verbal_threat",
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 78,
+      "fact_id": "696fab2c42603be6",
+      "event_id": "verbal_threat:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "physical_assault",
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 78,
+      "fact_id": "25163c3ba2715569",
+      "event_id": "physical_assault:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "financial_loss",
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 80,
+      "end": 99,
+      "fact_id": "db385a1aa4fc86fe",
+      "event_id": "financial_loss:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "injury",
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 80,
+      "end": 99,
+      "fact_id": "8af94021389db313",
+      "event_id": "injury:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "reported_fear",
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 101,
+      "end": 130,
+      "fact_id": "dde2e57a52dd7545",
+      "event_id": "reported_fear:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "immediate_danger",
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 101,
+      "end": 130,
+      "fact_id": "7d9d7ca81886ec47",
+      "event_id": "immediate_danger:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "desired_outcome",
+      "polarity": "reported",
+      "quote": "بدي نصائح",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 132,
+      "end": 141,
+      "fact_id": "1d89995e64ff0929",
+      "event_id": "desired_outcome:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "declines_draft",
+      "polarity": "reported",
+      "quote": "ما بدي بلاغ",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 143,
+      "end": 154,
+      "fact_id": "8891ce944bfb57bd",
+      "event_id": "declines_draft:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    },
+    {
+      "kind": "ordinary_dispute",
+      "polarity": "reported",
+      "quote": "خلاف",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 4,
+      "end": 8,
+      "fact_id": "0686ce7e8ccc8686",
+      "event_id": "ordinary_dispute:original",
+      "verified": false,
+      "review": "pending",
+      "superseded_in_current_state": false
+    }
+  ],
+  "current_fact_state": {
+    "ordinary_dispute": {
+      "kind": "ordinary_dispute",
+      "polarity": "reported",
+      "quote": "خلاف",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 50,
+      "end": 54,
+      "fact_id": "6998a8c7ae0425ef",
+      "event_id": "ordinary_dispute:original",
+      "evidence_refs": [
+        "0686ce7e8ccc8686",
+        "6998a8c7ae0425ef"
+      ]
+    },
+    "relationship": {
+      "kind": "relationship",
+      "polarity": "reported",
+      "quote": "جاري",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 19,
+      "end": 23,
+      "fact_id": "25e9d5c295692a4f",
+      "event_id": "relationship:original",
+      "evidence_refs": [
+        "25e9d5c295692a4f"
+      ]
+    },
+    "resolved": {
+      "kind": "resolved",
+      "polarity": "reported",
+      "quote": "انتهى الخلاف",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 42,
+      "end": 54,
+      "fact_id": "751bd9fbf5ffa9a9",
+      "event_id": "resolved:original",
+      "evidence_refs": [
+        "751bd9fbf5ffa9a9"
+      ]
+    },
+    "verbal_threat": {
+      "kind": "verbal_threat",
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 78,
+      "fact_id": "696fab2c42603be6",
+      "event_id": "verbal_threat:original",
+      "evidence_refs": [
+        "696fab2c42603be6"
+      ]
+    },
+    "physical_assault": {
+      "kind": "physical_assault",
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 78,
+      "fact_id": "25163c3ba2715569",
+      "event_id": "physical_assault:original",
+      "evidence_refs": [
+        "25163c3ba2715569"
+      ]
+    },
+    "financial_loss": {
+      "kind": "financial_loss",
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 80,
+      "end": 99,
+      "fact_id": "db385a1aa4fc86fe",
+      "event_id": "financial_loss:original",
+      "evidence_refs": [
+        "db385a1aa4fc86fe"
+      ]
+    },
+    "injury": {
+      "kind": "injury",
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 80,
+      "end": 99,
+      "fact_id": "8af94021389db313",
+      "event_id": "injury:original",
+      "evidence_refs": [
+        "8af94021389db313"
+      ]
+    },
+    "reported_fear": {
+      "kind": "reported_fear",
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 101,
+      "end": 130,
+      "fact_id": "dde2e57a52dd7545",
+      "event_id": "reported_fear:original",
+      "evidence_refs": [
+        "dde2e57a52dd7545"
+      ]
+    },
+    "immediate_danger": {
+      "kind": "immediate_danger",
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 101,
+      "end": 130,
+      "fact_id": "7d9d7ca81886ec47",
+      "event_id": "immediate_danger:original",
+      "evidence_refs": [
+        "7d9d7ca81886ec47"
+      ]
+    },
+    "desired_outcome": {
+      "kind": "desired_outcome",
+      "polarity": "reported",
+      "quote": "بدي نصائح",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 132,
+      "end": 141,
+      "fact_id": "1d89995e64ff0929",
+      "event_id": "desired_outcome:original",
+      "evidence_refs": [
+        "1d89995e64ff0929"
+      ]
+    },
+    "declines_draft": {
+      "kind": "declines_draft",
+      "polarity": "reported",
+      "quote": "ما بدي بلاغ",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 143,
+      "end": 154,
+      "fact_id": "8891ce944bfb57bd",
+      "event_id": "declines_draft:original",
+      "evidence_refs": [
+        "8891ce944bfb57bd"
+      ]
+    }
+  },
+  "contradictions": [],
+  "reported_facts": [
+    {
+      "kind": "ordinary_dispute",
+      "polarity": "reported",
+      "quote": "خلاف",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 50,
+      "end": 54,
+      "fact_id": "6998a8c7ae0425ef",
+      "event_id": "ordinary_dispute:original",
+      "evidence_refs": [
+        "0686ce7e8ccc8686",
+        "6998a8c7ae0425ef"
+      ]
+    },
+    {
+      "kind": "relationship",
+      "polarity": "reported",
+      "quote": "جاري",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 19,
+      "end": 23,
+      "fact_id": "25e9d5c295692a4f",
+      "event_id": "relationship:original",
+      "evidence_refs": [
+        "25e9d5c295692a4f"
+      ]
+    },
+    {
+      "kind": "resolved",
+      "polarity": "reported",
+      "quote": "انتهى الخلاف",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 42,
+      "end": 54,
+      "fact_id": "751bd9fbf5ffa9a9",
+      "event_id": "resolved:original",
+      "evidence_refs": [
+        "751bd9fbf5ffa9a9"
+      ]
+    },
+    {
+      "kind": "desired_outcome",
+      "polarity": "reported",
+      "quote": "بدي نصائح",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 132,
+      "end": 141,
+      "fact_id": "1d89995e64ff0929",
+      "event_id": "desired_outcome:original",
+      "evidence_refs": [
+        "1d89995e64ff0929"
+      ]
+    },
+    {
+      "kind": "declines_draft",
+      "polarity": "reported",
+      "quote": "ما بدي بلاغ",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 143,
+      "end": 154,
+      "fact_id": "8891ce944bfb57bd",
+      "event_id": "declines_draft:original",
+      "evidence_refs": [
+        "8891ce944bfb57bd"
+      ]
+    }
+  ],
+  "denied_facts": [
+    {
+      "kind": "verbal_threat",
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 78,
+      "fact_id": "696fab2c42603be6",
+      "event_id": "verbal_threat:original",
+      "evidence_refs": [
+        "696fab2c42603be6"
+      ]
+    },
+    {
+      "kind": "physical_assault",
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 56,
+      "end": 78,
+      "fact_id": "25163c3ba2715569",
+      "event_id": "physical_assault:original",
+      "evidence_refs": [
+        "25163c3ba2715569"
+      ]
+    },
+    {
+      "kind": "financial_loss",
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 80,
+      "end": 99,
+      "fact_id": "db385a1aa4fc86fe",
+      "event_id": "financial_loss:original",
+      "evidence_refs": [
+        "db385a1aa4fc86fe"
+      ]
+    },
+    {
+      "kind": "injury",
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "temporal_context": "unspecified",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 80,
+      "end": 99,
+      "fact_id": "8af94021389db313",
+      "event_id": "injury:original",
+      "evidence_refs": [
+        "8af94021389db313"
+      ]
+    },
+    {
+      "kind": "reported_fear",
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 101,
+      "end": 130,
+      "fact_id": "dde2e57a52dd7545",
+      "event_id": "reported_fear:original",
+      "evidence_refs": [
+        "dde2e57a52dd7545"
+      ]
+    },
+    {
+      "kind": "immediate_danger",
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "temporal_context": "current",
+      "verification": "unverified",
+      "extraction_method": "explicit_rule_candidate",
+      "requires_review": false,
+      "start": 101,
+      "end": 130,
+      "fact_id": "7d9d7ca81886ec47",
+      "event_id": "immediate_danger:original",
+      "evidence_refs": [
+        "7d9d7ca81886ec47"
+      ]
+    }
+  ],
+  "uncertain_facts": [],
+  "structured_details": {
+    "ordinary_dispute": {
+      "polarity": "reported",
+      "quote": "خلاف",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "relationship": {
+      "polarity": "reported",
+      "quote": "جاري",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "resolved": {
+      "polarity": "reported",
+      "quote": "انتهى الخلاف",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "verbal_threat": {
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "physical_assault": {
+      "polarity": "denied",
+      "quote": "ما هددني ولا اعتدى علي",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "financial_loss": {
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "injury": {
+      "polarity": "denied",
+      "quote": "ما صار ضرر أو خسارة",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "reported_fear": {
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "immediate_danger": {
+      "polarity": "denied",
+      "quote": "أنا مش خايف وما في خطر حاليًا",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "desired_outcome": {
+      "polarity": "reported",
+      "quote": "بدي نصائح",
+      "source": "initial_statement",
+      "verification": "unverified"
+    },
+    "declines_draft": {
+      "polarity": "reported",
+      "quote": "ما بدي بلاغ",
+      "source": "initial_statement",
+      "verification": "unverified"
+    }
+  },
+  "chronological_case_state": {
+    "media_possession": null,
+    "reported_copy": null,
+    "original_deadline": null,
+    "latest_deadline": null,
+    "renewed_threat": null,
+    "near_term_threat": null,
+    "events": [],
+    "disclaimer": "الزمن بحسب تسلسل الإفادات؛ العبارات النسبية محفوظة دون اختراع تاريخ. إعادة التأكيد ليست حدثًا مستقلًا."
+  },
+  "mentioned_evidence": [],
+  "missing_information": [],
+  "user_goal": "بدي نصائح",
+  "assisted_resolution_guidance": [
+    "اتفق بهدوء مع الطرف الآخر على طريقة واضحة لتجنب تكرار الخلاف.",
+    "إذا كان الخلاف حول موقف أو مرفق مشترك، راجع قواعد المبنى مع الإدارة.",
+    "يمكن الاستعانة بوسيط مناسب عند الحاجة، وتجنب التصعيد الكلامي."
+  ],
+  "risk": {
+    "risk_index": 8,
+    "severity_index": 8,
+    "risk_level": "منخفض مبدئيًا",
+    "route": "assisted_resolution_pending_review",
+    "recommended_route": "assisted_resolution",
+    "route_label": "إرشادات لحل الخلاف",
+    "urgent": false,
+    "immediate_safety_concern": "denied_by_user",
+    "digital_urgency": "not_indicated",
+    "review_priority": "standard",
+    "factors": [
+      "أساس نوع الواقعة: خلاف عادي (+8)"
+    ],
+    "factor_breakdown": [
+      {
+        "factor": "ordinary_dispute",
+        "contribution": 8,
+        "source_quote": "خلاف",
+        "source": "initial_statement",
+        "fact_id": "6998a8c7ae0425ef",
+        "review_status": "unverified",
+        "description": "أساس نوع الواقعة: خلاف عادي"
+      }
+    ],
+    "requires_human_review": true,
+    "model_extraction_succeeded": true,
+    "case_state_changes": [],
+    "uncertainty": "غير معاير؛ يعتمد على إفادات غير متحقق منها",
+    "disclaimer": "مؤشر شدة تجريبي 0–100 وليس احتمال وقوع الضرر أو حكمًا قانونيًا. الأوزان غير معايرة؛ جميع المعلومات تحتاج مراجعة بشرية."
+  },
+  "interview": [],
+  "planner_trace": [
+    {
+      "selected": null,
+      "stop_reason": "sufficient_information",
+      "missing": [],
+      "candidates": []
+    }
+  ],
+  "analysis": {
+    "mode": "synthetic_mock_no_external_request",
+    "llm_calls": 0,
+    "errors": [],
+    "rejected_proposal_count": 0
+  },
+  "limitations": [
+    "مثال اصطناعي بمحاكاة المستخرج؛ لم يُستدعَ نموذج حي ولم تُختبر خدمات خارجية. الدرجات هنا توضيح لقواعد الشدة فقط.",
+    "جميع المعلومات إفادات غير متحقق منها، ولم تُفحص الأدلة الأصلية.",
+    "قد تفوت المعالجة اللغوية تعبيرات أو تسندها خطأ؛ وجود اقتباس لا يضمن صحة التفسير.",
+    "غياب إشارة خطر لا يثبت غيابه؛ مؤشر الشدة غير معاير ولا يمثل احتمالًا.",
+    "يلزم تدقيق بشري قبل أي إجراء رسمي. النظام تجريبي للتوثيق والفرز الأولي فقط."
+  ],
+  "official_report_status": "not_asked"
+}
